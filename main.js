@@ -7,6 +7,7 @@
 // More on JSON here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON
 
 // The following line is valid JSON, which is saved as the variable grungeAlbumsJSON
+
 var grungeAlbumsJSON = {
     "albums": [
         {
@@ -48,7 +49,7 @@ var grungeAlbumsJSON = {
 
 // The follow line is valid JavaScript, but not valid JSON
 // Lab 2) Use JSONLint to validate it, and then edit the line to make it valid JSON
-{name: "Eddie Vedder", age: 49}
+var eddie = {name:"Eddie Vedder", age:49};
 
 // Lab 3) modify the 'grungeAlbumsJSON' JSON to have 3 more albums from the early 90's
 
@@ -56,8 +57,9 @@ var grungeAlbumsJSON = {
 // To do this we use the JSON.parse() method
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse
 
-var instrumentsJSON = {"instruments": ["guitar", "bass", "drums"]};
+var instrumentsJSON = '{"instruments": ["guitar", "bass", "drums"]}';
 var instruments = JSON.parse(instrumentsJSON);
+// console.log(instruments);
 
 // Lab 4) use JSON.parse to turn the grungeAlbumsJSON into a JavaScript object
 // Then use jQuery to list all of the albums in the 'albums' div in the DOM.
