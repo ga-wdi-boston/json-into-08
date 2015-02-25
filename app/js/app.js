@@ -1,3 +1,12 @@
+'use strict';
+
+var trace = function(){
+  for(var i = 0; i < arguments.length; i++){
+    console.log(arguments[i]);
+  }
+};
+
+
 // JSON is a subset of the object literal notation of JavaScript.
 // We use them to transfer objects between applications and JavaScript.
 // Property names must be double-quoted strings; trailing commas are forbidden.
@@ -9,38 +18,39 @@
 // The following line is valid JSON, which is saved as the variable grungeAlbumsJSON
 
 var grungeAlbumsJSON = {
-    "albums": [
-        {
-            "name": "Bleach",
-            "artist": "Nirvana",
-            "unitsSold": 1700000
-        },
-        {
-            "name": "Nevermind",
-            "artist": "Nirvana",
-            "unitsSold": 30000000
-        },
-        {
-            "name": "In Utero",
-            "artist": "Nirvana",
-            "unitsSold": 15000000
-        },
-        {
-            "name": "Ten",
-            "artist": "Pearl Jam",
-            "unitsSold": 10000000
-        },
-        {
-            "name": "Vs",
-            "artist": "Pearl Jam",
-            "unitsSold": 6100000
-        },
-        {
-            "name": "Vitalogy",
-            "artist": "Pearl Jam",
-            "unitsSold": 4770000
-        }
-    ]
+  "albums":
+  [
+    {
+        "name": "Bleach",
+        "artist": "Nirvana",
+        "unitsSold": 1700000
+    },
+    {
+        "name": "Nevermind",
+        "artist": "Nirvana",
+        "unitsSold": 30000000
+    },
+    {
+        "name": "In Utero",
+        "artist": "Nirvana",
+        "unitsSold": 15000000
+    },
+    {
+        "name": "Ten",
+        "artist": "Pearl Jam",
+        "unitsSold": 10000000
+    },
+    {
+        "name": "Vs",
+        "artist": "Pearl Jam",
+        "unitsSold": 6100000
+    },
+    {
+        "name": "Vitalogy",
+        "artist": "Pearl Jam",
+        "unitsSold": 4770000
+    }
+  ]
 };
 
 // Use JSONLint to determine if something is valid JSON.
@@ -59,7 +69,7 @@ var eddie = {name:"Eddie Vedder", age:49};
 
 var instrumentsJSON = '{"instruments": ["guitar", "bass", "drums"]}';
 var instruments = JSON.parse(instrumentsJSON);
-// console.log(instruments);
+// trace(instruments);
 
 // Lab 4) use JSON.parse to turn the grungeAlbumsJSON into a JavaScript object
 // Then use jQuery to list all of the albums in the 'albums' div in the DOM.
@@ -71,7 +81,7 @@ var instruments = JSON.parse(instrumentsJSON);
 
 var instructor = {firstName: "David", lastName: "Fisher"};
 var instructorJSON = JSON.stringify(instructor);
-// console.log(instructorJSON);
+// trace(instructorJSON);
 
 // Lab 5) Create a basic JavaScript object with a few properties.
 // Use JSON.stringify(); to turn the object into a JSON string.
