@@ -1,17 +1,6 @@
 ![General Assembly Logo](http://i.imgur.com/ke8USTq.png)
 
-# Demo: JSON
-
-[JSON](http://json.org/) (JavaScript Object Notation) is a lightweight data-interchange format. It is easy for humans to read and write. It is easy for machines to parse and generate. It is based on a subset of the JavaScript Programming Language, Standard ECMA-262 3rd Edition - December 1999. JSON is a text format that is completely language independent but uses conventions that are familiar to programmers of the C-family of languages, including C, C++, C#, Java, JavaScript, Perl, Python, and many others. These properties make JSON an ideal data-interchange language.
-
-We use JSON objects to transfer data between applications and Javascript.
-
-- Property names must be double-quoted strings;
-- trailing commas are forbidden;
-- leading zeroes are prohibited;
-- a decimal point must be followed by at least one digit;
-- most characters are allowed in strings, except certain control characters;
-- strings must be double quoted.
+#JSON
 
 ## Objectives
 
@@ -20,25 +9,30 @@ By the end of this, students should be able to:
 - Parse JSON
 - Iterate through JSON & use jQuery to append html elements based on that JSON
 
+## JSON :: Overview
+
+[JSON](http://json.org/) (JavaScript Object Notation) is a lightweight text-based data format that's based on JavaScript (specifically, a subset of Standard ECMA-262 3rd Edition - December 1999). Because it's text, and it looks like JavaScript, JSON is simultaneously both easy for humans to read and write AND easy for programs to parse and generate.
+
+> JSON is completely language-independent, but it uses conventions that are familiar to programmers of the C-family of languages, including C, C++, C#, Java, JavaScript, Perl, Python, and many others. These properties make JSON an ideal data-interchange language.
+
+We use JSON objects to transfer data between applications and Javascript. To keep everything consistent, all JSON code must follow a number of strict conventions (_stricter even than normal JavaScript!_) in order to be syntactically correct. For instance:
+
+- Property names must be double-quoted strings.
+- Trailing commas are forbidden.
+- Leading zeroes are prohibited.
+- In numbers, a decimal point must be followed by at least one digit.
+- Most characters are allowed in strings; however, certain characters (such as `'`, `"`, `\`, and newline/tab) must be 'escaped' with a preceding backslash (`\`) in order to be read as characters (as opposed to JSON control code).
+- All strings must be double-quoted.
+- No comments!
+
 ## Instructions
 
-- Fork/clone
-- Run `npm install`
-- Run `bower install`
-- Run `grunt serve`
-
-## Notes
-
-Gotcha's and extra information
+- Fork and clone this repo. Then, go into `app/app.js` and follow the steps.
 
 ## Additional Resources
 
-List additional related resources such as videos, blog posts and official documentation.
-
 - [JSONLint][1]
 - [JSON on Wikipedia][2]
-- [Item 3][3]
 
 [1]: http://jsonlint.com/
 [2]: http://en.wikipedia.org/wiki/JSON
-[3]: http://www.google.com
