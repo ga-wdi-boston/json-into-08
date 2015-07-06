@@ -6,8 +6,13 @@
 
 By the end of this, students should be able to:
 
+- Write JSON by hand and validate it using a 3rd-party JSON validator.
 - Convert JavaScript objects to JSON, and vice versa.
 - Parse JSON, iterate over the resulting object, and use jQuery to append multiple HTML elements.
+
+## Prerequisites
+
+- JavaScript Objects
 
 ## JSON :: Overview
 
