@@ -6,8 +6,8 @@
 
 By the end of this, students should be able to:
 
-- Parse JSON
-- Iterate through JSON & use jQuery to append html elements based on that JSON
+- Convert JavaScript objects to JSON, and vice versa.
+- Parse JSON, iterate over the resulting object, and use jQuery to append multiple HTML elements.
 
 ## JSON :: Overview
 
